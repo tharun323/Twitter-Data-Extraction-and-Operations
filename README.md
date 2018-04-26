@@ -7,11 +7,16 @@
 
 **Use  pip to install the following packages**
 
-`pip install tweepy`
+`pip install tweepy` 
+
 `pip install tldextract`
+
 `pip install collections`
+
 `pip install json`
+
 `pip install nltk`
+
 `pip install bs4`
 
 **Run the file using Pycharm or any other IDE of choice**
