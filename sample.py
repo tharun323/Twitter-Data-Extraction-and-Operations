@@ -35,7 +35,7 @@ class MyStreamListener(tweepy.StreamListener):
     def __init__(self):
         super().__init__()
         self.counter = 0
-        self.limit = 30  #set your tweet limit Change as per requirement
+        self.limit = 70  #set your tweet limit Change as per requirement
         self.lst=list()
         self.domain=list()
         self.q=list()
@@ -73,9 +73,9 @@ class MyStreamListener(tweepy.StreamListener):
                     self.domain.append("unresolved")
                 else:
                     self.domain.append(ext.domain)
+            print("\n")
             print("Total Unique Domains sorted by count: ")
             counter = collections.Counter(self.domain)#unique domains sorted by Count using collections container
-            print("\n")
             print(counter)
             print("\n")
             print("total links are :%d " %self.c)#prints total number of links
