@@ -130,7 +130,7 @@ class MyStreamListener(tweepy.StreamListener):
             print(counts.most_common(10))
             print("--------------program ended----------")
             return True
-            #sys.exit()
+            sys.exit()
 # Authentication using Twitter Developer app credentials
 myStreamListener = MyStreamListener()
 myStream = tweepy.Stream(auth = api.auth, listener=MyStreamListener())#add timeout as argument to get tweets as per seconds
@@ -140,5 +140,5 @@ myStream = tweepy.Stream(auth = api.auth, listener=MyStreamListener())#add timeo
 p = input("Enter the keyword: ")
 myStream.filter(track=[p])
 print("---REPORT ENDED-----")
-sys.exit()
+
 
