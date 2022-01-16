@@ -22,8 +22,8 @@ import pycron
 
 
 #.....................User Credentials.....................
-auth = tweepy.OAuthHandler('2ov06JFjpl5Y94q9GPrKbhf4H','KGRDEe4dy0fYtLj6tAKhuD2ogCGVokVolnEljrqLrCt0sMzeME')
-auth.set_access_token('1953615295-CRA8NdOxDVahS7vBHNlSZVjbFlq1KwGeE5rSvKi','1rfJNHYSyeQOuflCQtwQs7nEijzOzWGkv1bHR6kNBQ48v')
+auth = tweepy.OAuthHandler('','')
+auth.set_access_token('','')
 
 api = tweepy.API(auth)
 
